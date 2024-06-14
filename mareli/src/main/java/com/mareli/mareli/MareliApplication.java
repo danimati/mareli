@@ -9,5 +9,5 @@ public class MareliApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MareliApplication.class, args);
 	}
-
+		
 }

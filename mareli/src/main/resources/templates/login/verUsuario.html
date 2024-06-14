@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crud usuario</title>
+</head>
+<body>
+    
+    <h1>Tabla de persona</h1>
+    <table border = "1" id="TablaUsuarios">
+        <tr>
+            <th>idpersona</th>
+            <th>idtipodocumento</th>
+            <th>idsexo</th>
+            <th>sprimerapellido</th>
+            <th>ssegundoapellido</th>
+            <th>snombres</th>
+            <th>snumerodocumento</th>
+            <th>dfechanacimiento</th>
+            <th>spaisnacimiento</th>
+            <th>sdeptonacimiento</th>
+            <th>smupionacimiento</th>
+            <th>spaisvive</th>
+            <th>sdeptovive</th>
+            <th>smupiovive</th>
+            <th>sdireccion</th>
+            <th>idestadocivil</th>
+            <th>idgradoinstruccion</th>
+            <th>idgruposanguineo</th>
+            <th>stelefono</th>
+            <th>scelular</th>
+            <th>scorreoelectronico</th>
+            <th>idestado</th>
+            <th>idgrupopoblacional</th>
+            <th>rh</th>
+        </tr>
+        <tbody>
+            <tr th:each="user : ${personaC}">
+                <td th:text="${user.idpersona}" ></td>
+                <td th:text="${user.idtipodocumento}" ></td>
+                <td th:text="${user.idsexo}" ></td>
+                <td th:text="${user.sprimerapellido}" ></td>
+                <td th:text="${user.ssegundoapellido}" ></td>
+                <td th:text="${user.snombres}" ></td>
+                <td th:text="${user.snumerodocumento}" ></td>
+                <td th:text="${user.dfechanacimiento}" ></td>
+                <td th:text="${user.spaisnacimiento}" ></td>
+                <td th:text="${user.sdeptonacimiento}" ></td>
+                <td th:text="${user.smupionacimiento}" ></td>
+                <td th:text="${user.spaisvive}" ></td>
+                <td th:text="${user.sdeptovive}" ></td>
+                <td th:text="${user.smupiovive}" ></td>
+                <td th:text="${user.sdireccion}" ></td>
+                <td th:text="${user.idestadocivil}" ></td>
+                <td th:text="${user.idgradoinstruccion}" ></td>
+                <td th:text="${user.idgruposanguineo}" ></td>
+                <td th:text="${user.stelefono}" ></td>
+                <td th:text="${user.scelular}" ></td>
+                <td th:text="${user.scorreoelectronico}" ></td>
+                <td th:text="${user.idestado}" ></td>
+                <td th:text="${user.idgrupopoblacional}" ></td>
+                <td th:text="${user.rh}" ></td>    
+            </tr>
+            
+    </table>
+</body>
+</html>
